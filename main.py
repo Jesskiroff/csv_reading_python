@@ -1,3 +1,9 @@
-with open ("./weather_data.csv") as data_file:
-    weather_data = data_file.readlines()
-    print(weather_data)
+# with open ("./weather_data.csv") as data_file:
+#     data = data_file.readlines()
+#     print(data)
+
+import csv
+
+with open("./weather_data.csv") as data_file:
+    data = csv.reader(data_file)
+    print(data)
