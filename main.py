@@ -43,4 +43,5 @@ max_temp = data["temp"].max()
 # print(average_temp , max_temp)
 
 
-print(data[data.day == "Monday"])
+# print(data[data.day == "Monday"])
+print(data[data.temp == data["temp"].max()])
