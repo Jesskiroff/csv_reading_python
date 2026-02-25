@@ -72,4 +72,13 @@ gray_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== 
 cinnamon_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== "Cinnamon"])
 black_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== "Black"])
 
-print(f"There were {gray_squirrel_quantity} gray squirrels, {cinnamon_squirrel_quantity} cinnamon squirrels, and {black_squirrel_quantity} black squirrels counted in central park on the day of this study.")
+# print(f"There were {gray_squirrel_quantity} gray squirrels, {cinnamon_squirrel_quantity} cinnamon squirrels, and {black_squirrel_quantity} black squirrels counted in central park on the day of this study.")
+
+squirrel_data_dict = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "Count": [gray_squirrel_quantity, cinnamon_squirrel_quantity, black_squirrel_quantity]
+
+}
+
+squirrel_color_dataframe = pandas.DataFrame(squirrel_data_dict)
+squirrel_color_dataframe.to_csv("squirrel_color_data.csv")
