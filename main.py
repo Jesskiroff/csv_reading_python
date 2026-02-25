@@ -34,6 +34,10 @@ number_of_temps_calculated = len(temp_list)
 print(temp_list)
 print(number_of_temps_calculated)
 
-average_temp = round(sum(temp_list)/7)
+# average_temp = round(sum(temp_list)/7)
 
-print(average_temp)
+# print(average_temp)
+
+average_temp = data["temp"].mean()
+max_temp = data["temp"].max()
+print(average_temp , max_temp)
