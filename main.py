@@ -31,8 +31,8 @@ data_dict = data.to_dict()
 
 temp_list = data["temp"].to_list()
 number_of_temps_calculated = len(temp_list)
-print(temp_list)
-print(number_of_temps_calculated)
+# print(temp_list)
+# print(number_of_temps_calculated)
 
 # average_temp = round(sum(temp_list)/7)
 
@@ -40,4 +40,7 @@ print(number_of_temps_calculated)
 
 average_temp = data["temp"].mean()
 max_temp = data["temp"].max()
-print(average_temp , max_temp)
+# print(average_temp , max_temp)
+
+
+print(data[data.day == "Monday"])
