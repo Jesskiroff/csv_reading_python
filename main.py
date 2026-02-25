@@ -56,4 +56,5 @@ data_dict = {
 }
 
 create_dataframe = pandas.DataFrame(data_dict)
-print(create_dataframe)
+create_dataframe.to_csv("new_dataframe.csv")
+# print(create_dataframe)
