@@ -47,5 +47,13 @@ max_temp = data["temp"].max()
 # print(data[data.temp == data["temp"].max()])
 
 monday = data[data.day =="Monday"]
-print(monday.condition)
-print(monday.temp)
+# print(monday.condition)
+# print(monday.temp)
+
+data_dict = {
+    "students": ["Amy", "James", "Angela"],
+    "scores": [76, 56, 65]
+}
+
+create_dataframe = pandas.DataFrame(data_dict)
+print(create_dataframe)
