@@ -64,4 +64,12 @@ import pandas
 
 squirrel_data = pandas.read_csv("squirrel_data.csv")
 gray_squirrel = squirrel_data[squirrel_data["Primary Fur Color"]== "Gray"]
-print(len(gray_squirrel))
+cinnamon_squirrel = squirrel_data[squirrel_data["Primary Fur Color"]== "Cinnamon"]
+black_squirrel = squirrel_data[squirrel_data["Primary Fur Color"]== "Black"]
+
+
+gray_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== "Gray"])
+cinnamon_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== "Cinnamon"])
+black_squirrel_quantity = len(squirrel_data[squirrel_data["Primary Fur Color"]== "Black"])
+
+print(f"There were {gray_squirrel_quantity} gray squirrels, {cinnamon_squirrel_quantity} cinnamon squirrels, and {black_squirrel_quantity} black squirrels counted in central park on the day of this study.")
