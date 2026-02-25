@@ -21,4 +21,5 @@
 import pandas
 
 data = pandas.read_csv("weather_data.csv") 
-print(data)# Should print the pandas version
+temperature = data ["temp"]
+print(temperature)# Should print the pandas version
