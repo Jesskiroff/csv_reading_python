@@ -18,6 +18,7 @@
     # print(temperature)
        
 
-import pandas as pd
+import pandas
 
-print(pd.__version__)  # Should print the pandas version
+data = pandas.read_csv("weather_data.csv") 
+print(data)# Should print the pandas version
