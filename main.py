@@ -30,4 +30,10 @@ data_dict = data.to_dict()
 # print(data_dict)
 
 temp_list = data["temp"].to_list()
+number_of_temps_calculated = len(temp_list)
 print(temp_list)
+print(number_of_temps_calculated)
+
+average_temp = round(sum(temp_list)/7)
+
+print(average_temp)
