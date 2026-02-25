@@ -44,4 +44,8 @@ max_temp = data["temp"].max()
 
 
 # print(data[data.day == "Monday"])
-print(data[data.temp == data["temp"].max()])
+# print(data[data.temp == data["temp"].max()])
+
+monday = data[data.day =="Monday"]
+print(monday.condition)
+print(monday.temp)
